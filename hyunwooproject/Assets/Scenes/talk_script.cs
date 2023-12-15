@@ -67,80 +67,119 @@ public class talk_script : MonoBehaviour
     /*GameObject[]testGame = new GameObject[10];
      * Image[] testImage = new Image[10];
     */
-
-
-
-
-
-
+    [SerializeField]
     int descNum;
-public TextMesh descText;
-public Button startBtn;
-public GameObject textBg;
-public GameObject Bg;
+    public TMP_Text descText;
+    public Button startBtn;
+    public GameObject textBg;
+    public GameObject Bg;
 
-public void ChangeDesc()
-{
-    if (descNum == 0)
+    public void ChangeDesc()
     {
-        textBg.SetActive(true);
-        startBtn.gameObject.SetActive(false);
-        descText.text = "안녕.";
-    }
-    else if (descNum == 1)
-    {
-        descText.text = "내 이름은 이현승이야.";
-    }
-    else if (descNum == 2)
-    {
-        descText.text = "난 멋쟁이지.";
-    }
-    else if (descNum == 3)
-    {
-        descText.text = "집중하는 내 모습이 보이니?";
-    }
-    else if (descNum == 4)
-    {
-        descText.text = "그럼 열심히 하도록";
-    }
-    if (descNum == 5)
-    {
-        textBg.SetActive(false);
-        Bg.SetActive(true);
-    }
+        switch (descNum)
+        {
+            case 0:
+                {
+                    textBg.SetActive(true);
+                    startBtn.gameObject.SetActive(false);
+                    descText.text = "안녕.";
+                }
+                break;
+            case 1:
+                {
+                    descText.text = "내 이름은 이현승이야.";
+                }
+                break;
+            case 2:
+                {
+                    descText.text = "난 멋쟁이지.";
+                }
+                break;
+            case 3:
+                {
+                    descText.text = "집중하는 내 모습이 보이니?";
+                }
+                break;
+            case 4:
+                {
+                    descText.text = "집중하는 내 모습이 보이니?";
+                }
+                break;
+            case 5:
+                {
+                    descText.text = "그럼 열심히 하도록";
+                }
+                break;
+            case 6:
+                {
+                    textBg.SetActive(false);
+                    Bg.SetActive(true);
+                }
+                break;
+            case 7:
+                {
+                    textBg.SetActive(true);
+                    descText.text = "asdf.";
+                }
+                break;
+            case 8:
+                {
+                    descText.text = "ASGAG.";
+                }
+                break;
+            case 9:
+                {
+                    descText.text = "ASDFDHBGH.";
+                }
+                break;
+            case 10:
+                {
+                    descText.text = "ASDFSAGGREAG.";
+                }
+                break;
+            case 11:
+                {
+                    descText.text = "AASRHHERRJJYYJTYY.";
+                }
+                break;
+            case 12:
+                {
+                    //descNum = -1;
+                    Bg.SetActive(false);
+                    textBg.SetActive(false);
+                }
+                break;
+            case 13:
+                {
+                    textBg.SetActive(true);
+                    descText.text = "퀘스트받음.";
+                }
+                break;
+            case 14:
+                {
+                    descText.text = "퀘스트받음1.";
+                }
+                break;
+            case 15:
+                {
+                    descText.text = "퀘스트받음2.";
+                }
+                break;
+            case 16:
+                {
+                    descText.text = "퀘스트받음3.";
+                }
+                break;
+            case 17:
+                {
+                    textBg.SetActive(false);
+                    descNum = 12;
+                }
+                break;
+            default:
+                break;
+        }
 
-    else
-    {
         descNum++;
-
-        if (descNum == 6)
-        {
-            textBg.SetActive(true);
-            descText.text = "asdf.";
-        }
-
-        else if (descNum == 7)
-        {
-            descText.text = "ASGAG.";
-        }
-        else if (descNum == 8)
-        {
-            descText.text = "ASDFDHBGH.";
-        }
-        else if (descNum == 9)
-        {
-            descText.text = "ASDFSAGGREAG.";
-        }
-        else if (descNum == 10)
-        {
-            descText.text = "AASRHHERRJJYYJTYY.";
-        }
-        if (descNum == 11)
-            descNum = 0;
-        else
-        {
-            descNum++;
-        }
     }
-}
 }
