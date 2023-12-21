@@ -1,45 +1,65 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class catcantroller : MonoBehaviour
 {
-    float speed = 0;
-    Vector2 startPos;
+    Rigidbody2D rigid2D;
+    float jumpForce = 680.0f;
+    float walkForce = 30.0f;
+    float maxWalkSpeed = 2.0f;
+    Animator animator;
 
     void Start()
     {
         Application.targetFrameRate = 60;
+        rigid2D = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
-        // 스와이프의 길이를 구한다
-        if (Input.GetMouseButtonDown(0))
+        // 점프한다
+        if (Input.GetKeyDown(KeyCode.Space) && rigid2D.velocity.y == 0)
         {
-            // 마우스를 클릭한 좌표
-            startPos = Input.mousePosition;
-            Debug.Log(startPos);
+            rigid2D.AddForce(transform.up * jumpForce);
+        }
+
+        // 좌우 이동
+        int key = 0;
+        if (Input.GetKey(KeyCode.RightArrow)) key = 1;
+        if (Input.GetKey(KeyCode.LeftArrow)) key = -1;
+
+        // 플레이어 속도
+        float speedx = Mathf.Abs(rigid2D.velocity.x);   //Abs : 절대값 구하는 것. 항상 양수가 나오도록 한거임.
+
+        // 스피드 제한
+        if (speedx < maxWalkSpeed)
+        {
+            rigid2D.AddForce(transform.right * key * walkForce);
+        }
+
+        if (key != 0)
+        {
+            SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+            //transform.localScale = new Vector3(key, 1, 1);
+            if (key == 1)
+            {
+                sprite.flipX = true;
+            }
+            else
+            {
+                sprite.flipX = false;
+            }
+            animator.speed = speedx / 2f;
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("충돌함");
+        SceneManager.LoadScene("Goyang_04_Clear");//씬 매니저를 통해 씬을 관리, 로드 씬을 통해 씬을 불러옴.
+    }
+}
 
             
-        }
-        //왼쪽 마우스 클릭.
-        else if (Input.GetMouseButtonUp(0))
-        {
-            // 마우스를 떼었을 때 좌표
-            Vector2 endPos = Input.mousePosition;
-            float swipeLength = endPos.x - startPos.x;
 
-            // 스와이프 길이를 처음 속도로 변환한다
-            speed = swipeLength / 500.0f;   // 500은 적당한 보정값임.
-                                            // input.mousePosition으로 얻어지는 벡터값은 해상도의 영향을 받음
 
-            // 효과음을 재생
-            GetComponent<AudioSource>().Play();
-        }
-
-        transform.Translate(speed, 0, 0);  // 이동
-        this.speed *= 0.98f;                    // 감속
-    }
-
-}
