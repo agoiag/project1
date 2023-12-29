@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:gamebook project/Assets/Resources/image/player nephalem.png.meta
 guid: dfa7b46d32f76cd4bb9510f3985ab5fc
+=======
+guid: 7937338fae95b6e41a36df261ad5c423
+>>>>>>> Stashed changes:gamebook project/Assets/image/player nephalem.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

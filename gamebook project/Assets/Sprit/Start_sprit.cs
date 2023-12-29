@@ -73,6 +73,16 @@ public class Start_sprit : MonoBehaviour
     {
         throw new NotImplementedException();
     }
+    private int nextIndex = 0;
+    public void PlayDesc(int descIndex)
+    {
+        string descString = (string)DataManager.Instance.talkTable[descIndex]["Desc"];
+        descText.text = descString;
+        nextIndex = (int)DataManager.Instance.talkTable[descIndex]["Nextid"];
+    }
 
-    // void OnSelect(int id) { descId 대사 출력 }
+    public void OnClickNextDesc()
+    {
+        PlayDesc(nextIndex);
+    }
 }

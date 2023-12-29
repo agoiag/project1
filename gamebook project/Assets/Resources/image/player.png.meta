@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:gamebook project/Assets/Resources/image/player.png.meta
 guid: f253a6df2de736841bd34c4f314dc834
+=======
+guid: 105c0871c2d9b1a449b5be160acb8788
+>>>>>>> Stashed changes:gamebook project/Assets/image/player.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

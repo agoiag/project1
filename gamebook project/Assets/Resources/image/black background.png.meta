@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:gamebook project/Assets/Resources/image/black background.png.meta
 guid: 1a4ee6c2a434a594d8613ae5e2558043
+=======
+guid: ea8bd306eb891924abaf32e957592292
+>>>>>>> Stashed changes:gamebook project/Assets/image/black background.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

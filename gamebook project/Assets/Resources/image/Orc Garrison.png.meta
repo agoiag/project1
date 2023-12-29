@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:gamebook project/Assets/Resources/image/Orc Garrison.png.meta
 guid: 1f91ab0c79c289b419629cca93ba2ba8
+=======
+guid: 4deb4b7bfa131d74b9b40220450dc2bd
+>>>>>>> Stashed changes:gamebook project/Assets/image/Orc Garrison.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

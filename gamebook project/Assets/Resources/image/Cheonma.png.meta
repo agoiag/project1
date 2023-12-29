@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:gamebook project/Assets/Resources/image/Cheonma.png.meta
 guid: 32b45e2dd024940449e47c33b8d0cb4c
+=======
+guid: c02b1c7478659e94089a43bc848de565
+>>>>>>> Stashed changes:gamebook project/Assets/image/Cheonma.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

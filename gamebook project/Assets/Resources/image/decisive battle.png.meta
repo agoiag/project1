@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:gamebook project/Assets/Resources/image/decisive battle.png.meta
 guid: 02d84416f99883240abd7ededa6b4a74
+=======
+guid: 17817c6a124896a44a12312691da3e18
+>>>>>>> Stashed changes:gamebook project/Assets/image/decisive battle.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

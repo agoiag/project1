@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:gamebook project/Assets/Resources/image/player demon humanization.png.meta
 guid: 698e41a90fce0fa45bcfbd6cc470b2f2
+=======
+guid: de9354639a767a347a9f7105b7b71244
+>>>>>>> Stashed changes:gamebook project/Assets/image/player demon humanization.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

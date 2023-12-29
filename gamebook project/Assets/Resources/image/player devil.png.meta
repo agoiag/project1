@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:gamebook project/Assets/Resources/image/player devil.png.meta
 guid: 61f8216a2e74f7d42bb5273704602e74
+=======
+guid: cb07ec1595381214288e91cfdd52caf9
+>>>>>>> Stashed changes:gamebook project/Assets/image/player devil.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

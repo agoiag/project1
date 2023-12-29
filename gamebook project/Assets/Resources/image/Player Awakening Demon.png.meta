@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:gamebook project/Assets/Resources/image/Player Awakening Demon.png.meta
 guid: 757fb3d80bd9e764093bda619f2b7d53
+=======
+guid: b7a332f47dbf4ec4c8d416885a07b009
+>>>>>>> Stashed changes:gamebook project/Assets/image/Player Awakening Demon.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

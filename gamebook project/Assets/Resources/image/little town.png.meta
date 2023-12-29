@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:gamebook project/Assets/Resources/image/little town.png.meta
 guid: 73688c5cf7c77eb479e29478b35dda7c
+=======
+guid: 7135d3385749dd048b77cc47036d9f69
+>>>>>>> Stashed changes:gamebook project/Assets/image/little town.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

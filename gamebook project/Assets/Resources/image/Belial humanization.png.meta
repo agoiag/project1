@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:gamebook project/Assets/Resources/image/Belial humanization.png.meta
 guid: ad66e016dcab75247b97a449e3060f05
+=======
+guid: 237659d95fc90324ebed4fda8bece6cc
+>>>>>>> Stashed changes:gamebook project/Assets/image/Belial humanization.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

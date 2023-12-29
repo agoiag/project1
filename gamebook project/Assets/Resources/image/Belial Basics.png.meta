@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:gamebook project/Assets/Resources/image/Belial Basics.png.meta
 guid: 0e83debbf80d2284ca8c2e39d4476513
+=======
+guid: cb6a12b1483a1d64bb84e033a985aa4a
+>>>>>>> Stashed changes:gamebook project/Assets/image/Belial Basics.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

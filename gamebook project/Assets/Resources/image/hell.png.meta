@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:gamebook project/Assets/Resources/image/hell.png.meta
 guid: bd3b9c4f0a31b15439edea04c7081d39
+=======
+guid: a34747b3786e3c04fbbf20fea7754a8c
+>>>>>>> Stashed changes:gamebook project/Assets/image/hell.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

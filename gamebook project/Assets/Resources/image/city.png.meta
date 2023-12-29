@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:gamebook project/Assets/Resources/image/city.png.meta
 guid: d04a3a2231c17b848ae731c387b52390
+=======
+guid: b5333bd78ca2438428f296faab408d62
+>>>>>>> Stashed changes:gamebook project/Assets/image/city.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

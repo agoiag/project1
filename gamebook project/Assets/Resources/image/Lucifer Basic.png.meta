@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:gamebook project/Assets/Resources/image/Lucifer Basic.png.meta
 guid: 2ed50de2acea86247ba7b14028638c31
+=======
+guid: bc036c8e6c04bb740aa6f71b32b97ec1
+>>>>>>> Stashed changes:gamebook project/Assets/image/Lucifer Basic.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
